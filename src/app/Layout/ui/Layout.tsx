@@ -4,9 +4,9 @@ import { Outlet } from "react-router-dom";
 
 const Layout: FC = () => {
   return (
-    <div className="h-screen overflow-x-hidden">
+    <div className="flex h-screen flex-col justify-between overflow-x-hidden">
       <LayoutHeader />
-      <main>
+      <main className="flex-1">
         <Outlet />
       </main>
       <LayoutFooter />
